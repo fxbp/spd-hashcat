@@ -10,8 +10,9 @@ S'utilitza el software hashcat que permet generar diferents combinacions de hash
 
 En aquesta pràctica s'han utilitzat diverosos mètodes per trobar les contrasenyes.
 
-En resultat s'han trobat un total de 45 contrasenyes entre els 2 fitxers. (Veure fitxer hashcat.potfile adjunt). No son gaires però els he extret amb els métodes que m'han permes acabar en un temps raonable
+En resultat s'han trobat un total de 50 contrasenyes entre els 2 fitxers. (Veure fitxer hashcat.potfile adjunt). No son gaires però els he extret amb els métodes que m'han permes acabar en un temps raonable.
 
+Totes les proves i el document resultat s'han realitzat fins el dia 3/12 que és quan  suposava que s'acabava l'activitat. A partir d'aquell dia vam intercanviar formes d'extreure contrasenyes i per aixó no vaig creure oportú provar de nou amb el periode extra.
 
 ## Métodes Utilitzats
 
@@ -28,7 +29,22 @@ A més he buscat alguns diccionaris amb les contrasenyes que s'han anat publican
 
 Amb aquesta tècnica s'han aconseguit bastants resultats en els 2 fitxers. Sobretot amb els diccionaris extra.
 
-Els diccionaris extra que m'he descarregat es troben al directori files/provats.
+La majoria de diccionaris provats son de:
+
+ - github SecLists: https://github.com/danielmiessler/SecLists/tree/master/Passwords
+ - SkullSecurity: https://wiki.skullsecurity.org/Passwords 
+
+Alguns dels diccionaris usats son els que contenen més registres de les pagines mencionades.
+
+Per exemple:
+
+- rockyou
+- darkweb2017-top10000
+- xato-net-10-million-passwords-1000000
+- unkown-azul
+- UserPassCombo-Jay
+- 000webhost
+- Spanish
 
 ### Combinatoria
 
@@ -59,4 +75,7 @@ S'ha provat d'executar la comanda amb parametres de combinacio de diccionari + f
 
 S'han provat algunes combinacions de fins a dels fitxers de noms i 2 digits en diferents posisions. Podem veure un petit script al fitxer hashcat/hashcat-noms-comb.sh.
 
-Aquest ha estat un métode d'última hora a veure si podia treure alguna contrasenya més i en el moment de fer l'informa encara no s'ha trobat cap contrasenya.
+Amb aquests métode s'han aconseguit uns 7 o 8 resultats.
+
+
+
